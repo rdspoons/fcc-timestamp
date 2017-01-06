@@ -50,5 +50,4 @@ var server = http.createServer(function ( req, res ) {
 	res.end( JSON.stringify( json ) ) ;
 })
 
-server.listen( Number( port ) ) ;
-
+server.listen( process.env.PORT || Number( port) ) ;
